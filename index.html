@@ -9,5 +9,352 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/myicon.ico" />
     <title>My personal portfolio</title>
+    <!--
+    docker run --rm -p 8888:80 -v D:\vstudio-workspace\ntonx.github.io:/var/www/html ddomizzi/apache:php
+    -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
   </head>
-  
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Sections</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile1.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#blog">Notes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Antonio
+            <span class="text-primary">Plata</span>
+          </h1>
+          <div class="subheading mb-5">CDMX, Mexico · 
+            <a href="mailto:name@email.com">anicolasplata@gmail.com</a>
+          </div>
+          <p class="mb-5">Hi! This is me, I am a software engineer focus on devops technologies. I am a resilient and inquisitive person that loves trying new tools functionalities to help provide a CI/CD mindset. .</p>
+          <p class="mb-5">I am experienced in deploying microservices systems in Kubernetes and Docker platform, in process to create container images, and connect microservices in a transparent way. I like programming especially creating system than interact with operative systems in the background level, so I consider myself as backend developer.
+          Moreover, I like testing new tools to create CI/CD environments and I try to propose new solutions. I am learning about Ansible and Selenium tools, and I enjoy working and creating services hosted on the cloud, making applications that are implemented on PaaS platforms.
+            </p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/anpcode/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <!--
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            -->
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/anplata/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/ntonx">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">External consultant service/ Infrastructure engineer</h3>
+              <div class="subheading mb-3">Centro de Investigación y de Estudios Avanzados del IPN</div>
+              <p> Installation of Kubernetes platform (K8s) following a distributed manner, in which two servers were set up as masters and other ones executed the worker role, the installation was executed to provide a fault tolerance environment to each microservice deployed on this platform. Once the installation was done, three microservice systems were deployed on K8s.</p>
+              Skills: Using K8s objects (deployment, service, volumes), Linux server configuration using ssh communication, deploying a private image repository.  
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2022 - November 2022</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">DevOps/Infrastructure Engineer</h3>
+              <div class="subheading mb-3">IBM de México, S. de R.L. de C.V.</div>
+              <p>Requirements gathering, coding and deployment of systems based on microservices using Java, Python and IBM Cloud services.</p>
+              Skills: Using SpringBoot framework, web applications containerizing, using git and maven, deploying apps in K8s environment.            
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2020 - August 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software engineer</h3>
+              <div class="subheading mb-3">Centro de Investigación y de Estudios Avanzados del IPN</div>
+              <p>Development of a system for processing large volumes of images based on a parallel pattern model using microservices coded in Python and virtual containers. The achieved goal was reduce the time processing of the initial system which followed a sequential execution.</p>
+              <p>Development and implementation of a container and virtual images management system using PHP and MySQL. The system acts as a web user interface to inspet virtual containers in execution and to create images based on a Dockerfile file.</p></p>
+              Skills: Using Flask framework to develop python web apps, monitoring resources from Linux operative systems, using declarative language to define a Dockerfile.
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2019 - December 2019</span>
+            </div>
+          </div>
+          
+          <!--
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Internship Intern</h3>
+              <div class="subheading mb-3">Centro de Investigación y de Estudios Avanzados del IPN</div>
+              <p>Development and implementation of a container and virtual images management system using PHP and MySQL.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2019 - July 2019</span>
+            </div>
+          </div>
+          -->
+          
+          
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Centro de Investigación y de Estudios Avanzados del IPN</h3>
+              <div class="subheading mb-3">Master's degree </div>
+              <div>Master in Science in Engineer and Computer Technologies</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2020 - August 2022</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Polytechnic University of Atlacomulco</h3>
+              <div class="subheading mb-3">Engineer's degree</div>
+              <p>Computer System Engineer</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2016 - January 2020</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-python"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-java"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-php"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+          </ul>
+          </div>
+          
+          <div class="subheading mb-3">CI/CD tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicon-kubernetes-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-docker-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-jenkins-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-ansible-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-selenium-original"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-git-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+          
+
+          <div class="subheading mb-3">Frameworks &amp; Tools</div>
+          <ul class="list-inline list-icons">  
+            <li class="list-inline-item">
+              <i class="devicon-flask-original-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-spring-plain-wordmark"></i>
+            </li>       
+            <li class="list-inline-item">
+              <i class="devicon-apache-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-linux-plain"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Database management systems</div>
+          <ul class="list-inline list-icons">  
+            <li class="list-inline-item">
+              <i class="devicon-mysql-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-postgresql-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-mongodb-plain-wordmark"></i>
+            </li>
+          </ul>
+          
+        </div>
+        
+        
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>In addition to being a software engineer, I enjoy some of my time outdoors whether it's running or walking my pet while the weather permits. In winter I prefer to stay at home and watch science fiction or action movies or television series and enjoy an exquisite coffee.</p>
+          <p class="mb-0">I also like to cook although I don't do it often. I spend a lot of my free time exploring the latest developments in the IT world, but what I'm really passionate about is putting what I read into action.</p>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://university.atlassian.com/student/award/Cv42gDRRCtF5JUBqRJE1qgd6" target="_blank">
+                Beginner's Guide to Agile in Jira Badge</a>
+              </li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://university.atlassian.com/student/award/W55hgVYZtPMvp2VCVCNVq9Jf" target="_blank">
+                Jira Fundamental Badge</a></li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://drive.google.com/file/d/1BnQOxp3MunTI9Prw6aiaZJYeFINKVRdk/view?usp=sharing" target="_blank">
+                IBM Storage and Cloud Essentials</a></li>  
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://www.credly.com/badges/d9be96fe-f35f-4eb8-92e2-b9e00da739a5" target="_blank">
+              Security and Privacy by Design Foundations</a></li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://www.credly.com/badges/8ecc1dec-10c8-447a-8187-92dcaf13a17c" target="_blank">
+              IBM Cloud Kubernetes Service</a></li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://www.credly.com/badges/209ac0a6-8ff0-4e79-9dfe-2e93fb1bf5b5"target="_blank">
+              Getting started with Microservices with Istio and IBM Cloud Kubernetes Service</a></li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="blog">
+        <div class="my-auto">
+          <h2 class="mb-5">Notes</h2>
+          <p>This section is under construction.</p>
+          <p class="mb-0">It will make reference for notes written in GitHub reporitories.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
