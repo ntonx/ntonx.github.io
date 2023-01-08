@@ -1,0 +1,31 @@
+.hovertext {
+    size: 1px;
+    position: relative;
+    
+    
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 120%;
+    background-color: #BD5D38;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 2px 0;
+    transition: opacity 0s ease-in-out;
+    font-size: x-small; 
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 90%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+  
